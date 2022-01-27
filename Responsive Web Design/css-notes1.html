@@ -1,0 +1,43 @@
+<style>             #where CSS style elements are used 
+  .injected-text {
+    margin-bottom: -25px;   #px are absolute units, mm   and in are also units based on screen size
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color:black;
+    border-width: 5px; 
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+    padding: 1.5em;         #em and rem are relative units (not absolute units like px) and are relative to element size
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 20px 40px 20px 40px;
+  }
+  <!-- color : hsl = hue saturation lightness -->
+
+
+  #orange-text {            #this is a class style declaration  any html element with the id="orange-text" will be orange
+      color: orange;        #!important style declaration > inline declaration > id declarations >  class declarations 
+  }
+</style>
+
+
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>

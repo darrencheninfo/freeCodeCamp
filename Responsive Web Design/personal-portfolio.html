@@ -1,0 +1,83 @@
+<!-- 
+Personal Portfolio
+-->
+
+<!--CSS-->
+<style>
+
+nav {
+    position:fixed;
+    background-color: red;
+
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+#welcome-section {
+    display: flex;          /* flexbox */
+    flex-direction: column;     
+    justify-content: center;    /* justify = centers vertically  */
+    align-items: center;    /* align = center of page horizontally */
+    height: 100vh;    /* makes the welcome section take the full heigh of the screen */
+}
+
+</style>
+
+<!--HTML-->
+
+<main> 
+
+<!--NAV -->
+<nav id="navbar">
+    <a href="#projects">Projectts</a>
+    <a href="#profile">Profile</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<body>
+    <!--welcome -->
+    <section id="welcome-section">
+        <h1>Hello.  My name is Darren.  </h1>
+        <p>Welcome to my Personal Portfolio!</p>
+    </section>
+
+    <!--projects -->
+    <section id="projects">
+        <h1>See my projects below: </h1>
+
+        <div id="project-tile">
+            <a href="http://darrenchen.info">My personal website</a>
+            <a
+                href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+                target="_blank"
+                class="project project-tile"
+            >
+            <img
+                class="project-image"
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                alt="project"
+            />
+            <p class="project-title">
+                <span class="code">&lt;</span>
+        </div>
+    </section>
+
+    <!--contacts -->
+    <section id="Contact">
+        <header>Let's Work Together</header>
+        <a target="_blank" id="profile-link" href="https://www.github.com/darrencheninfo">My github</a>
+        <a target="_blank" href="https://www.freecodecamp.org/DarrenChen">My freecodecamp profile</a>
+        
+    </section>
+
+
+
+</body>
+
+
+</main>
